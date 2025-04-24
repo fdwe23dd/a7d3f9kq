@@ -1,54 +1,27 @@
-# React + TypeScript + Vite
+# Heating Circuit Modal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains part 1 of the design and UI challenge for autarc handed in by Leon Nothegger.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Part 1 – Heating Circuit Modal
 
-## Expanding the ESLint configuration
+A responsive, modern modal for planning heating circuits, with a focus on:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Clear visual hierarchy
+- Intuitive grouping of fields
+- Consistent UI with Tailwind CSS
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<img width="807" alt="Screenshot 2025-04-24 at 11 07 14" src="https://github.com/user-attachments/assets/21d0a49e-94d3-4e69-8bf5-5d4a7aea6484" />
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Potential Next Steps
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Implement functionality
+- Swap placeholder design tokens with actual ones
+- Integrate into the project
+
+## 🚀 Start the Project
+
+```bash
+npm install
+npm run dev
