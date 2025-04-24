@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  input, select, textarea {
+    @apply focus:outline-none focus:ring-1 focus:ring-brand-default focus:border-inherit;
+  }
+}
+
+/* Typography Utilities */
+@layer components {
+  .heading-xl { @apply text-2xl font-bold text-black; }
+  .heading-lg { @apply text-xl font-semibold text-black; }
+  .heading-md { @apply text-lg font-medium text-black; }
+  .label { @apply block mb-1 text-sm font-medium text-black text-left; }
+  .text-regular { @apply text-base text-black; }
+  .text-muted { @apply text-sm text-gray-500; }
+  .input { @apply w-full rounded border p-2 text-black bg-white; }
+  .select { @apply w-full appearance-none rounded border pl-2 pr-8 py-2 bg-white text-black shadow-sm focus:outline-none focus:ring-0 focus:border-inherit; }
+  .tab-button { @apply mr-4 border-b-2 pb-2 text-base font-medium; }
+  .tab-active { @apply border-brand-dark text-brand-dark; }
+  .tab-inactive { @apply border-transparent; }
+  .tab-other { @apply border-transparent text-gray-500; }
+}
